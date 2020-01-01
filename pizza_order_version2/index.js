@@ -1,34 +1,17 @@
-
-
-const user = require('./functions');
-console.log(user.hello);
-
-
-
-
 /*
-const readline = require('readline')
+const user = require('./user');
+console.log(`User: ${user.getName()}`);
 
-console.log("");
-console.log("Welcome to the Pizza Order Application!");
-console.log("");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
-  
-  rl.question("What are the names of the people ordering pizza today? ", (answer) => {
-    // TODO: Log the answer in a database
-
-    console.log("");
-    
-  
-    rl.close();
-    people = answer;
-  });
-
+const pizzaType = require("./functions");
+console.log(pizzaType);
 */
+
+console.log("Welcome To The Pizza Application.\n Are you ready to figure out what pizza's you need for today?\n press (y) for yes!\n or\n press (n) to exit the program!")
+
+
+
+
+
 
 
 

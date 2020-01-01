@@ -1,12 +1,20 @@
+/*
+
 //we define a variable called hello, which contains a string called "ja rule"
 let hello = "Ja rule";
 //we then use the exports function to make this variable accessable throughout our application.
 //we then import this function within our index.js and call it using . notation.
-// user.hello
-
+/ user.hello
 exports.hello = hello;
 
+*/
 
+function pizzaType(){
+    console.log("What type of Pizza Would you like?");
+    console.log("Type 1 for a list of Meat Pizza's or Type 2 for a list of Vegetarian Pizzas");
+};
+
+exports.pizzaType = pizzaType;
 
 
 /*
