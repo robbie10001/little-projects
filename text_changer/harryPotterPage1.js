@@ -10,12 +10,12 @@ console.log(page);
 
 function toLowerCase() {
     harryPotter = page.toLowerCase();
-    example = page.replace(/Dursley/g, "COLBORNE");
+    example = page.replace(/Dursley/g, "COLBOURNE");
     result = example.replace(/Dudley/g, "ROBBIE");
-    addressChange = result.replace(/four, Privet Drive/g, "98 Copeland road Beecroft");
-    finalResult = addressChange.replace(/was the director of a firm called Grunnings, which made drills/g, "Was a barrister in private practice");
+
+   
     console.log("--------AFTER-------");
-    console.log(finalResult);
+    console.log(result);
  
 };
 
