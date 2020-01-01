@@ -1,10 +1,15 @@
 var colorize = require('colorize');
+let people = ["Craig", "Sonia", "Richard", "Wendy", "Caza", "Jimmy", "Robbie"];
+/*
+1. Ask any person "Do you have any preferences?" (we can create an array of pizzas, if they choose one not on the list, then we can say choose again)
+2. Pizza's - 1. Is meat pizza, 2. Is vegeterian options.
 
-let people = ["Robbie", "Sam", "Georgia", "Noah", "Maj", "Lizzie", "Liz", "Hannah", "Chris L", "Chris C", "Liv", "Sophie", "Jack", "Katie", "Emma", "Gab", "Patrick", "KatieF"];
+*/
+console.log(people.length);
 let number = people.length;
-let food = number /1.5;
+let food = number /2;
 let pizza = Math.ceil(food);
-let sides = number /3;
+let sides = number /4;
 let garlicBread = Math.ceil(sides);
 let fluid = number /5;
 let drinks = Math.ceil(fluid);
