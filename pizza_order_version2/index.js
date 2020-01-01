@@ -1,3 +1,12 @@
+
+
+const user = require('./functions');
+console.log(user.hello);
+
+
+
+
+/*
 const readline = require('readline')
 
 console.log("");
@@ -19,5 +28,7 @@ const rl = readline.createInterface({
     people = answer;
   });
 
+*/
 
-console.log(people);
+
+

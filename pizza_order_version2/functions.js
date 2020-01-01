@@ -1,3 +1,12 @@
+//we define a variable called hello, which contains a string called "ja rule"
+let hello = "Ja rule";
+//we then use the exports function to make this variable accessable throughout our application.
+//we then import this function within our index.js and call it using . notation.
+// user.hello
+
+exports.hello = hello;
+
+
 
 
 /*
