@@ -37,3 +37,15 @@ puts "Lastly, would you like any soft-drinks with your pizzas?"
 number_of_drinks
 
 puts "Okay so you need cans of #{$drinks}!"
+
+puts "Awesome! It looks like you're going to need #{$number_of_pizza} pizzas, #{$garlic_bread} garlic breads and cans of #{$drinks}. \n Can i Suggest you order the following"
+
+
+def count 
+    veg_pizza_needed = $veg.length / $number_of_pizza 
+    meat_pizza_needed = $meat.length / $number_of_pizza 
+    puts veg_pizza_needed
+    puts  meat_pizza_needed
+end 
+
+count 
