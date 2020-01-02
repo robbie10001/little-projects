@@ -1,65 +1,26 @@
 require_relative "./methods.rb"
 require_relative "./arrays.rb"
 
-=begin
+$drinks = []
 
-array = []
+def number_of_drinks
+    puts "What would you like to drink today?"
+    puts $drink_options 
+    thirst = gets.chomp 
+    if thirst >= "4"
+        puts "okay, nothing for you!"
+    elsif thirst == "1"
+        coke = "coke"
+        $drinks.push("coke")
+    elsif thirst == "2"
+        pepsi = "pepsi"
+        $drinks.push("pepsi")  
+    else thirst == "3"
+        fanta = "fanta"
+        $drinks.push("fanta")  
+    end 
+end 
 
-userinput = gets.chomp 
-if userinput == "0" 
-    number = "hello"
-    array.push(number) 
-else userinput 
-    puts "learn how to type"
-end
-puts array
+number_of_drinks
 
-=end 
-
-
-
-=begin
-
-meat_array = []
-vegetarian_array = []
-
-
-
-
-
-=end 
-
-
-
-=begin
-at this stage, we have the number of vegetarian eaters and the number of meat eaters. 
-
-What we need to do is use control flow to go through each person and allow them to add the type of pizza they want to an array. 
-=end 
-
-
-
-
-
-
-    
-
-
-=begin
-
-array = []
-
-userinput = gets.chomp 
-if userinput == "0" 
-    number = "hello"
-    array.push(number) 
-else userinput 
-    puts "learn how to type"
-end
-puts array
-
-=end 
-
-
-
-
+puts $drinks

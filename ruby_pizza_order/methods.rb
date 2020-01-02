@@ -84,3 +84,70 @@ def figuring_out_what_diners_want
         end 
     end 
 end 
+
+$number_of_pizza = 0
+
+def number_of_pizza
+    for i in 0...$number_of_dinners do 
+        hunger = gets.chomp 
+        if hunger == "1" 
+            $number_of_pizza = $number_of_pizza + 0.2 
+        elsif hunger == "2"
+            $number_of_pizza = $number_of_pizza + 0.4 
+        elsif hunger == "3"
+            $number_of_pizza = $number_of_pizza + 0.6
+        elsif hunger == "4" 
+            $number_of_pizza = $number_of_pizza + 0.8 
+        elsif hunger == "5" 
+            $number_of_pizza = $number_of_pizza + 1.0 
+        else 
+            puts "please try again!"
+        end 
+    end 
+end 
+
+
+$garlic_bread = 0
+
+def garlic_bread 
+    for i in 0...$number_of_dinners do 
+    userselection = gets.chomp 
+    if userselection == "0"
+        puts "nothing comes of nothing!"
+    elsif userselection == "1"
+        $garlic_bread = $garlic_bread + 0.5 
+    elsif userselection == "2"
+        $garlic_bread = $garlic_bread + 1 
+    else 
+        puts "Invalid selection"
+    end 
+end
+end 
+
+$drinks = []
+
+def number_of_drinks
+    puts $drink_options 
+    for i in 0...$number_of_dinners do 
+    thirst = gets.chomp 
+    if thirst >= "4"
+        puts "okay, nothing for you!"
+    elsif thirst == "1"
+        coke = "coke"
+        $drinks.push("coke")
+    elsif thirst == "2"
+        pepsi = "pepsi"
+        $drinks.push("pepsi")  
+    else thirst == "3"
+        fanta = "fanta"
+        $drinks.push("fanta")  
+    end 
+end
+end 
+
+
+
+
+
+
+
